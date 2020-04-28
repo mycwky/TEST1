@@ -1,0 +1,12 @@
+{
+  "functionName": [
+    {
+      "name": " ",
+      "describe": "请选择"
+    }
+    ,{
+      "name": "initEcharts",
+      "describe": "初始化图表"
+    }
+  ]
+}

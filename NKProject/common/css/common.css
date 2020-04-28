@@ -1,0 +1,156 @@
+/*后加的CSS  */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+
+/* 主页面 */
+.area_home_top_block {
+    width: 24%;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .area_home_top_block_img {
+    float: left;
+    width: 38px;
+    vertical-align: middle;
+  }
+
+  .area_home_top_block_img img {
+    margin: 20px auto;
+    display: block;
+    height: 29px;
+  }
+
+  .area_home_top_block_txt {
+    float: left;
+    height: 20px;
+    min-width: 200px;
+    margin: 5px 0px;
+    padding: 0px 5px;
+    text-align: left;
+    font-size: 14px;
+    color: #FFF;
+    line-height: 30px;
+  }
+
+  .area_home_top_block_txt > span {
+    font-size: 15px;
+    display: block;
+    float: right;
+    line-height: 30px;
+    height: 30px;
+    font-family: 'Microsoft YaHei', 'STHeiti SC', 'STXihei';
+    font-weight: bold;
+  }
+
+/*分页面 */
+.transformer_top_block {
+    background-image: url("../../static/images/transformer_top_background.png");
+    background-repeat: no-repeat;
+    width: 33%;
+    min-width: 342px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    height: 69px;
+    font-size: 16px;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    background-position: left center;
+}
+
+.transformer_top_block .transformer_top_dot {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+}
+#treeclass{
+    margin-top: 18px;
+    margin-left: 20px;
+    line-height: 38px;
+}
+.site_home_top_block {
+    width:22%;
+    max-width:250px;
+    height:120px;
+    margin:5px 15px 5px 0px;
+    display:inline-block;
+}
+.site_home_top_block_img {
+    display:inline-block;
+    height:110px;
+    width:45%;
+    padding:19px 20px;
+}
+.site_home_top_block_img img {
+    margin:0px auto;
+    height:80px;
+}
+.site_home_top_block_txt {
+    /* float:right; */
+    display:inline-block;
+    min-height:50px;
+    width:50%;
+    margin:15% auto;
+    padding:0px;
+    text-align:center;
+    font-size:15px;
+    color:#FFF;
+}
+.site_home_top_block_value {
+    font-size:19px;
+    display:block;
+    line-height:65px;
+    height:65px;
+    font-family:'Microsoft YaHei','STHeiti SC','STXihei';
+    font-weight:bold;
+}
+.charGrid table thead  {
+    font-size:12px;
+}
+.transformer_top_block .transformer_top_dot {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+}
+.transformer_block_indicator {
+    list-style:none;
+    padding:0px;
+}
+
+.transformer_block_indicator li {
+    display:block;
+    height:25px;
+    min-width:109px;
+    margin:4px 2px;
+    font-size:12px;
+    line-height:25px;
+    padding:0px 8px;
+}
+.transformer_block_indicator>li.di_alert1 {
+    background-color:#ff0000;
+}
+.transformer_block_indicator>li.di_alert2 {
+    background-color:#ff6a00;
+
+}
+.transformer_block_indicator>li.di_alert3 {
+    background-color:#0b0a97;
+}
+.transformer_block_indicator>li.di_off {
+    background-color:#1e8a1e;
+}
+iframe{
+    width: 100%;
+    height: 600px;
+}

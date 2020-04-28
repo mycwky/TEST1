@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--<head>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设备型号数据点规则</title>
+<!--</head>-->
+<!--<body>-->
+    <!--设备型号数据点规则-->
+    <div class="row" id="hw-gz">
+        <div class="col-md-12">
+            <div class="charGrid">
+                <button class="btn btn-primary btn-lg" data-toggle="modal" style="margin-left: 90%;"
+                    data-target="#myModal-rt-sb-gz" onclick="getGZ()">
+                    编辑
+                </button>
+                <p style="width:100%;text-align: center;color: white;" id="rightTitle" class="title"></p>
+                <div id="showGzAlert">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框（Modal）设备实时状态加规则 -->
+    <div class="modal fade" id="myModal-rt-sb-gz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="rt_sb_sj">
+                        根据设备型号设置数据点规则
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>序列</td>
+                                <td id="gz_group" colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td><a style="color: red;">✔</a>选择设备型号</td>
+                                <td colspan="3"><input id="select_gz_type" style="width:450px;" type="text" readonly
+                                        placeholder="请选择设备型号" /></td>
+                            </tr>
+                            <tr>
+                                <td><a style="color: red;">✔</a>数据ID</td>
+                                <td><input value="" id="sj_gz_dataId" placeholder="请输入数据ID..."></td>
+                                <td><a style="color: red;">✔</a>数据点描述</td>
+                                <td><input id="gzName" placeholder="数据点描述..." value=""></td>
+                            </tr>
+                            <tr>
+                                <td><a style="color: red;">✔</a>选择</td>
+                                <td><select id="selectGZ" style="height: 25px">
+                                        <option value=">">大于</option>
+                                        <option value="<">小于</option>
+                                        <option value="=">等于</option>
+                                        <option value=">=">大于等于</option>
+                                        <option value="<=">小于等于</option>
+                                        <option value="<<">大于小于</option>
+                                    </select></td>
+                                <td><a style="color: red;">✔</a>阈值</td>
+                                <td><input value="" id="gzValue" placeholder="请输入阈值..." type="text"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><button id="add_sj_gz" class="add_pz" style="width: 100%">增加</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a style="color: yellow;">✔</a>展示块标题</td>
+                                <td><input value="" id="sj_gz_title" placeholder="请输入展示块标题..."></td>
+                                <td><a style="color: yellow;">✔</a>数据刷新周期(单位:秒)</td>
+                                <td><input id="refreshGZ" value="" type="number" placeholder="请输入数据刷新周期..."></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">输入保留的小数位</td>
+                                <td colspan="2"><input id="xiaoshuGZ" placeholder="请输入保留的小数位..."></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveGz('tc')">
+                        提交更改
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--</body>-->
+<!-- 单模块JS引入写这里 -->
+</html>

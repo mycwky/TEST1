@@ -1,0 +1,232 @@
+
+<!--header顶部导航栏 固定定位。 每个页面都有。分界面配置页-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>导航栏</title>-->
+<!--</head>-->
+<!--<body>-->
+<input id="whichHtml" value="pz" hidden>
+<input id="siteid" type="hidden" value="104"/>
+<input id="siteTree" type="hidden" value="">
+    <nav  id="base_nav" class="navbar navbar-inverse navbar-fixed-top" style="border-width:0px">
+    
+      <div id="showTime">
+      </div>
+    
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    
+        <div  class="visible-lg-block">
+          <!--业主的LOGON-->
+          <div class="navbar-brand">
+            <div style="display:inline-block;">
+              <a href="" style="color:#FFF" title="回到首页" alt="回到首页">
+                <img src="static/images/NK.png" style="width: 80px;height: 80px"/>
+              </a>
+            </div>
+          </div>
+          <!--电站选择-->
+          <div data-toggle="popover" data-placement="bottom" style="display:inline-block">
+            <a id="base_nav_site">
+              <img src="static/images/base_top_site.png">
+            </a>
+            <div class="popover fade bottom in" id="popover860567" style="top: 80px; left: 295.5px; display: none;">
+              <div class="arrow" style="left: 50%;"></div>
+              <div class="popover-content">
+                <div style="width:250px;">
+                  <input id="base_nav_site_input" type="text" placeholder="请搜索" class="form-control input-sm" style="width:95%;margin:0px auto">
+                  <div style="max-height:450px;overflow-y:auto">
+                    <div id="base_nav_stationlist_tree">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!--用户头像-->
+          <div id="base_top_user">
+            <div id="base_top_popover" data-toggle="popover">
+              <img src="static/users/default.png"  onerror="imgerror(this)">
+              <div class="tooltip_html hidden">
+                <div style="background-color: #33435c;color:#FFF;padding: 3px 10px;border-width:0px 0px 1px 0px;border-radius: 4px;">
+                  <span style="font-size:11px;display:block;color:#FFF">农垦南通</span>
+                </div>
+                <ul id="base_top_popover_menu">
+    
+                  <li>
+                    <a href="#">
+                      注销
+                    </a>
+                  </li>
+                </ul>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+          <!--重要数据-->
+          <div id="base_nav_text" class="visible-lg-inline-block">
+            <div >
+              <img src="static/images/base_top_icon1.png" style="width:18px;">
+              <a style="color: white" class="name"></a>
+              <a id="sunshine" class="head" style="color: #198ffc"></a>
+              <a style="color: white" class="unit" id="sunshine-unit"></a>
+              <span data-toggle="modal" class="head-data" style="cursor: pointer"  onclick="editHeadConfig('sunshine-unit')">编辑</span>
+            </div>
+    
+            <div>
+              <img src="static/images/base_top_icon2.png" style="width:12px;">
+              <a style="color: white" class="name"></a>
+              <a id="temperature" class="head" style="color: #198ffc"></a>
+              <a style="color: white" class="unit" id="temperature-unit"></a>
+              <span data-toggle="modal" class="head-data" style="cursor: pointer"  onclick="editHeadConfig('temperature-unit')">编辑</span>
+            </div>
+    
+            <div >
+              <img src="static/images/base_top_icon3.png"  style="width:9px;">
+              <a style="color: white" class="name"></a>
+              <a id="windSpeed" class="head" style="color: #198ffc"></a>
+              <a style="color: white" class="unit" id="windSpeed-unit"></a>
+              <span data-toggle="modal" class="head-data" style="cursor: pointer"  onclick="editHeadConfig('windSpeed-unit')">编辑</span>
+            </div>
+    
+            <div>
+              <img src="static/images/base_top_icon4.png"  style="width:10px;">
+              <a style="color: white" class="name"></a>
+              <a id="electricity" class="head" style="color: #198ffc"></a>
+              <a style="color: white" class="unit" id="electricity-unit"></a>
+              <span data-toggle="modal"  class="head-data" style="cursor: pointer" onclick="editHeadConfig('electricity-unit')">编辑</span>
+            </div>
+            <div id="base_nav_alert">
+              <div  id="base_nav_alert_popover" data-toggle="popover">
+                <img src="static/images/base_top_icon5.png">
+                <span id="base_nav_text_flag" url="/jsonapicomp/?method=getAlarmAmountFromDi&params=0&r=total_number">..</span>
+                <div class="hidden tooltip_html">
+                  <div style="width:450px;max-height:600px;overflow-y:auto" id="alert_div">
+                    <a data-toggle="modal" data-target="#myModal-alert" style="cursor: pointer" onclick="getAlertName()">编辑</a>
+                    <table id="base_nav_text_alert_table"  pageSize="12" columns="1" class="table" border="1" bordercolor="#bbb" cellspacing="0" cellpadding="2" style="border-collapse:collapse;">
+                      <thead>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                    <nav>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+  <!-- 模态框（Modal） head   编辑保存-->
+  <div class="modal fade" id="myModal-head" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"
+                  aria-hidden="true">×
+          </button>
+          <h4 class="modal-title" id="myModalLabel-head">
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填</td>
+                </tr>
+                </thead>
+                <tr>
+                  <td><a style="color: red">✔</a>设备ID</td>
+                  <td><input id="inputHeadDeviceId" value="" placeholder="请输入设备ID..."></td>
+                  <td><a style="color: red">✔</a>数据ID</td>
+                  <td><input id="inputHeadDataId" value="" placeholder="请输入数据ID..."></td>
+                </tr>
+                <tr>
+                  <td><a style="color: red">✔</a>数据点名称</td>
+                  <td><input id="inputHeadName" value="" placeholder="请输入数据点名称..."></td>
+                  <td><a style="color: red">✔</a>单位</td>
+                  <td><input id="inputHeadUnit" value="" placeholder="请输入数据点单位..."></td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align: center"><a style="color: yellow">✔</a>数据刷新周期</td>
+                  <td colspan="2"><input id="refreshHeadData" value="" type="number" placeholder="请输入数据点刷新周期..." style="width: 100%"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default"
+                  data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="head-save-btn">
+            提交更改
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- 模态框（Modal） alert-->
+<div class="modal fade" id="myModal-alert" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-hidden="true">×
+        </button>
+        <h4 class="modal-title" id="myModalLabel-alert">
+          告警框编辑
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="searchTree"></div>
+          </div>
+        </div>
+      </div>
+      <table class="table table-bordered">
+        <tr>
+          <td>数据刷新周期(单位:秒)</td>
+          <td><input id="refreshAlert" value="5" type="number"></td>
+        </tr>
+      </table>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default"
+                data-dismiss="modal">关闭
+        </button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveAlert()">
+          提交更改
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--</body>-->
+<!-- 单模块JS引入写这里 -->
+<script src="common/js/ajaxMode.js"  defer></script>
+<script src="common/js/alert_gen.js" defer></script>
+<script src="common/js/prj_UI_cfg.js" defer></script>
+<script src="common/js/pzmain_config.js" defer></script>
+<script src="common/js/treeOperation.js" defer></script>
+<script src="common/js/head_gen.js" defer></script>
+<script src="static/js/report.js" defer></script>
+<!--</html>-->

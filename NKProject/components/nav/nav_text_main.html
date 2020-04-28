@@ -1,0 +1,140 @@
+<!-- 重要信息展示模块，首页main使用 -->
+
+
+    <div id="content" style="margin-top:79px">
+      <div class="col-md-12">
+        <div class="row" id="mainZCN-Head" style="padding-bottom: 15px;">
+          <div style="height:89px;box-shadow:#121d38 5px 5px 10px 2px;background-color: #33435c;border-radius: 8px;">
+            <div class="area_home_top_block" style="width: 30%">
+              <div class="area_home_top_block_img">
+                <img src="static/images/area_top_1.png"/>
+              </div>
+              <div class="area_home_top_block_txt" id="mainHead_1">
+                <a class="name" style="color: white"></a>
+                <a class="numValue" style="color:#198ffc"></a>
+                <a class="unit" style="color: #198ffc"></a>
+                &nbsp;<span data-target="#myModal-head" data-toggle="modal" onclick="Head_getCfgInfo('nk_main')"
+                            style="cursor: pointer;float: right">编辑</span>
+              </div>
+              <div class="area_home_top_block_txt" id="mainHead_2">
+                <a class="name" style="color: white"></a>
+                <a class="numValue" style="color:#198ffc"></a>
+                <a class="unit" style="color: #198ffc"></a>
+                &nbsp;<span data-target="#myModal-head" data-toggle="modal" onclick="Head_getCfgInfo('nk_main')"
+                            style="cursor: pointer">编辑</span>
+              </div>
+            </div>
+            <div class="area_home_top_block" style="width: 30%">
+              <div class="area_home_top_block_img">
+                <img src="static/images/area_top_2.png"/>
+              </div>
+              <div class="area_home_top_block_txt" id="mainHead_3" style="padding-left: 20px">
+                <a class="name" style="color: white"></a>
+                <a class="numValue" style="color:#198ffc"></a>
+                <a class="unit" style="color: #198ffc"></a>
+                &nbsp;<span data-target="#myModal-head" data-toggle="modal" onclick="Head_getCfgInfo('nk_main')"
+                            style="cursor: pointer">编辑</span>
+              </div>
+              <div class="area_home_top_block_txt" id="mainHead_4" style="padding-left: 20px">
+                <a class="name" style="color: white"></a>
+                <a class="numValue" style="color:#198ffc"></a>
+                <a class="unit" style="color: #198ffc"></a>
+                &nbsp;<span data-target="#myModal-head" data-toggle="modal" onclick="Head_getCfgInfo('nk_main')"
+                            style="cursor: pointer">编辑</span>
+              </div>
+            </div>
+            <div class="area_home_top_block" style="width: 30%">
+              <div class="area_home_top_block_img">
+                <img src="static/images/area_top_3.png"/>
+              </div>
+              <div class="area_home_top_block_txt" id="mainHead_5">
+                <a class="name" style="color: white"></a>
+                <a class="numValue" style="color:#198ffc"></a>
+                <a class="unit" style="color: #198ffc"></a>
+                &nbsp;<span data-target="#myModal-head" data-toggle="modal" onclick="Head_getCfgInfo('nk_main')"
+                            style="cursor: pointer">编辑</span>
+              </div>
+              <div class="area_home_top_block_txt" id="mainHead_6">
+                <a class="name" style="color: white"></a>
+                <a class="numValue" style="color:#198ffc"></a>
+                <a class="unit" style="color: #198ffc"></a>
+                &nbsp;<span data-target="#myModal-head" data-toggle="modal" onclick="Head_getCfgInfo('nk_main')"
+                            style="cursor: pointer">编辑</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+      <!-- 模态框（Modal） head-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModal-head" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button aria-hidden="true" class="close" data-dismiss="modal"
+                  type="button">×
+          </button>
+          <h4 class="modal-title" id="myModalLabel-head">
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-bordered">
+                <thead>
+                <tr>
+                  <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填</td>
+                </tr>
+                </thead>
+                <tr>
+                  <td><a style="color: red">✔</a>设备ID</td>
+                  <td >
+                    <input  id="inputHeadDeviceId" placeholder="输入设备ID"  type="text">
+                  </td>
+                  <td><a style="color: red">✔</a>数据ID</td>
+                  <td>
+                    <input  id="inputHeadDataId" placeholder="输入数据ID" type="text" >
+                  </td>
+                </tr>
+                <tr>
+                  <td><a style="color: red">✔</a>数据点名称</td>
+                  <td>
+                    <input  id="inputHeadName" placeholder="输入数据点名称"  type="text">
+                  </td>
+                  <td><a style="color: red">✔</a>单位</td>
+                  <td>
+                    <input id="inputHeadUnit" placeholder="输入数据点单位" type="text">
+                  </td>
+                </tr>
+                <tr>
+                  <td><a style="color: yellow">✔</a>比例系数</td>
+                  <td><input id="inputRatio" placeholder="输入比例系数" value=""></td>
+                  <td><a style="color: yellow">✔</a>保留几位小数</td>
+                  <td><input id="xiaoShu" placeholder="输入保留的小数位" type="number" value=""></td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align: center"><a style="color: yellow">✔</a>数据刷新周期</td>
+                  <td colspan="2"><input id="refreshHeadData" placeholder="输入数据刷新周期" style="width: 100%" type="number"
+                                         value=""></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal"
+                  type="button">关闭
+          </button>
+          <button class="btn btn-primary" data-dismiss="modal" onclick="saveHeadDeviceIdAndDataId('nk_main')"
+                  type="button" id="HEAD_BT_SAVE">
+            提交更改
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--<script src="common/js/until"></script>-->
+<!--<script src="common/js/main/head_gen.js" ></script>-->

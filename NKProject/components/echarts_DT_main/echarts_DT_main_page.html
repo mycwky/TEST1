@@ -1,0 +1,239 @@
+<!-- 配置模块散点图与单体信息  分页面配置div-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>散点图&单体设备</title>-->
+<!--</head>-->
+<!--<body>-->
+    <div class="col-md-12" style=" margin:15px 0 ;">
+        <!--散点图-->
+        <div class="row select-margin col-md-5" id="echarts_show_div" style="margin-right: 25px;">
+            <div id="yzc_bat" class="charGrid" style="min-height: 564px">
+                <button class="btn btn-primary btn-lg" data-toggle="modal" style="margin-left: 85%;" id="echarts-edit"
+                    value="echarts-div">
+                    编辑
+                </button>
+                <p style="width:100%;text-align: center;color: white;" id="batTitle" class="title"></p>
+                <div class="row" id="echarts-div"></div>
+            </div>
+        </div>
+
+        <!--单体设备光字牌数据集-->
+        <div class="row col-md-7" id="single-div">
+            <div id="DT_Device_parent" class="charGrid" style="min-height: 564px;">
+                <button class="btn btn-primary btn-lg" data-toggle="modal" style="margin-left: 90%;" id="single-edit"
+                    value="echarts-div" onclick="getSingleId('single-div')">
+                    编辑
+                </button>
+                <button class="btn btn-primary btn-lg" data-toggle="modal"
+                    style="margin-left: 75%;margin-top: -4.7%;display: block;" id="single-edit-lineNum"
+                    value="echarts-div" onclick="getSingleId('single-div')">
+                    修改行数
+                </button>
+                <div id="DT_Device"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 编辑保存规则 -->
+
+    <!-- 模态框（Modal）echarts-->
+    <div class="modal fade" id="myModal-rt-sb" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="rt-sb-status">
+                    </h4>
+                    <div id="alert">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>序列</td>
+                                <td id="dataIdGroup" colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td><a style="color: red">✔</a>数据ID</td>
+                                <td><input value="" id="realTimeDataId" placeholder="请输入数据ID..."></td>
+                                <td><a style="color: red">✔</a>数据点名称</td>
+                                <td><input value="" id="realTimeDataName" placeholder="请输入数据点名称..."></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a style="color: yellow">✔</a> 数据刷新周期(单位:秒)
+                                </td>
+                                <td>
+                                    <input id="refreshTagsModelData" value="5" type="number" placeholder="请输入数据刷新周期..."
+                                        style="width: 100%;">
+                                </td>
+                                <td><a style="color: red">✔</a>颜色</td>
+                                <td><input class='selectColor' type='button' readonly
+                                        style='border: 1px solid;border-radius: 4px;width: 25px;cursor: pointer'
+                                        onclick='reloadColor()' id="charts-color"></td>
+                            </tr>
+                            <tr>
+                                <td><a style="color: red">✔</a>选择设备型号</td>
+                                <td colspan="3"><input id="echarts_jznbq_hw" style="width:450px;" type="text" readonly
+                                        placeholder="请选择设备型号..." /></td>
+                            </tr>
+                            <tr>
+                                <td><a style="color: red">✔</a>选择区域</td>
+                                <td colspan="3"><input id="echarts_jznbq_obj" style="width:450px;" type="text" readonly
+                                        placeholder="请选择..."></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><button id="addRealTimeDataId" style="width:100%"
+                                        class="add-pz">增加</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="save-echarts-config">
+                        提交更改
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- 模态框（Modal）单体设备光字牌数据集合 -->
+   <div class="modal fade" id="myModal_DT_Device_Data" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title">
+            单体设备光字牌数据集合设置
+          </h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered" id="DS_GROUP" style="table-layout:fixed;">
+            <thead>
+            <tr>
+              <td>编号</td>
+              <td>遥测点</td>
+              <td>遥信点</td>
+              <td>状态点</td>
+              <td>保留小数位</td>
+              <td hidden>图片</td>
+              <td>最大显示行数</td>
+              <td>数据刷新周期</td>
+              <td>设备型号</td>
+              <td>操作</td>
+            </tr>
+            </thead>
+            <tbody id="DS_GROUP_TBODY">
+            </tbody>
+          </table>
+          <table class="table table-bordered" id="t_1">
+            <thead>
+            <tr>
+              <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><a style="color: red">✔</a>输入遥测点集合</td>
+              <td><input id="YC" value="" placeholder="请输入遥测集合..."></td>
+              <td>输入编号</td>
+              <td><input id="dsId" placeholder="请输入编号..."></td>
+            </tr>
+            <tr>
+              <td><a style="color: red">✔</a>输入遥信点集合</td>
+              <td><input id="YX" value="" placeholder="请输入遥信集合..."></td>
+              <td>输入保留小数位</td>
+              <td><input id="xiaoshu" placeholder="请输入保留小数..."></td>
+            </tr>
+            <tr>
+              <td>选择图片</td>
+              <td colspan="3"><a class="file" title="点击选择图片" style="float: left;color: black;border: 1px solid #7f7f7f">选择图片
+                <input type="file" id="uploadPhoto" onchange="imgChange(this)" accept="image/png,image/gif,image/jpeg"/>
+              </a><input value="" id="photoName"disabled style="height: 32px; border:1px solid #7f7f7f;border-radius: 4px; margin-left: 10px;background-color: white"></td>
+            </tr>
+            <tr>
+              <td>设置最大显示行数</td>
+              <td><input id="maxRowNum" type="number"></td>
+              <td>数据刷新周期</td>
+              <td><input id="refresh_DT_DATA_LP" type="number"></td>
+            </tr>
+            <tr>
+              <td><a style="color: yellow">✔</a>标题</td>
+              <td><input id="DT_TITLE" value="" placeholder="请输入标题..."></td>
+              <td>状态点ID</td>
+              <td><input id="DATAID_STATUS" value="" placeholder="请输入状态点ID..."></td>
+            </tr>
+            <tr>
+              <td><a style="color: red">✔</a>选择设备型号</td>
+              <td colspan="3"><input id="single_jznbq_hw" style="width:450px;"type="text" readonly placeholder="请选择设备型号..."/></td>
+            </tr>
+            <tr>
+              <td colspan="4"><button id="addModel_DS_WhichArea" style="width: 100%" class="add_pz">增加</button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="save-single">
+            提交更改
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- 模态框（Modal） alert-->
+<div class="modal fade" id="myModal-editLineNum" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="myModalEditLineNum" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+            </div>
+            <table class="table table-bordered">
+                <tr>
+                    <td><a style="color: red">✔</a>请选择</td>
+                    <td colspan="3"  id="line-num-selects"></td>
+                </tr>
+                <tr>
+                    <td>更改行数</td>
+                    <td><input id="editLineNum" value="" type="number"></td>
+                </tr>
+            </table>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="submitEditLineNum">
+                    提交更改
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--</body>-->
+<!--</html>-->

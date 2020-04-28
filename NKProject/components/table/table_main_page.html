@@ -1,0 +1,45 @@
+<!-- 主页面table表格 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>告警table</title>
+<!--</head>-->
+<!--<body>-->
+<!--    -->
+    <div class="row ">
+        <div class="col-md-12 ">
+          <div class="charGrid" id="mainTable" style="min-height: 400px">
+            <div class="row ">
+              <div class="col-md-3">
+                <select style="text-align: center;background-color: #33435c;border-radius: 4px;color: white;border: 1px white solid;height: 32px;" id="search_area_report">
+                </select>
+              </div>
+              <div class="col-md-3" style="color: white">
+                <select style="text-align: center;background-color: #33435c;border-radius: 4px;color: white;border: 1px white solid;height: 32px;" onchange="selectReportDate(this.value)" id="selectHistoryReport">
+                  <option value="date">日报</option>
+                  <option value="month">月报</option>
+                </select>
+                <input id="selectDate" placeholder="选择日期" value="" autocomplete="off">
+              </div>
+              <div class="col-md-3">
+                <button class="downLoad" id="downLoad-mainExcel">下载</button>
+              </div>
+            </div>
+            <table class="table table-bordered" id="mainTable-excel"
+                   style="color: white;margin-top: 10px">
+              <thead>
+              <tr style='background-color:rgb(238,238,238)'><th>序号</th><th>设备名称</th><th>告警名称</th><th>状态</th><th>时间</th><th>事件等级</th></tr>
+              </thead>
+              <tbody id="mainTable-tbody"></tbody>
+            </table>
+            <div id="flipCver">
+         
+            </div>
+          </div>
+        </div>
+      </div>
+<!--</body>-->
+
+<!--</html>-->

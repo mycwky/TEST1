@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农垦主页面配置頁</title>
+    <link href="common/css/common.css" rel="stylesheet" />
+    <link href="static/css/bass.css" rel="stylesheet" />
+    <script src='static/script/jquery.js'></script>
+    <script type="text/javascript" src="common/js/include.js"></script>
+</head>
+<body>
+<div class="col-md-12">
+    <div id="header"></div>
+    <div id="nav_text"></div>
+    <div id="echarts_show"></div>
+</div>
+<script type="text/javascript">
+
+    $("#header").load('components/header/header_main_pz.html',function () {
+        $.getScript("common/js/main/head_gen.js");
+        $.getScript("static/js/report.js");
+    });
+    $("#nav_text").load('components/nav/nav_text_main.html',function () {
+        $.getScript("common/js/main/head_gen.js")
+    });
+    $("#echarts_show").load('components/echarts_main/echartsmain.html',function () {
+        $.getScript("common/js/main/curve.js");
+    });    //圖表
+
+
+</script>
+<script type="text/javascript" >
+    function setInterval2(func, interv) {
+        func();
+        setInterval(func, interv);
+    }
+    function imgerror(img) {
+        img.src = "static/users/default.png";
+        img.onerror = null;   //控制不要一直跳动
+    }
+
+</script>
+</body>
+
+
+<script src="common/js/until/ajaxMode.js" ></script>
+<script src="common/js/until/prj_UI_cfg.js"></script>
+<script src="common/js/until/untils.js"></script>
+<script src="common/js/until/treeOperation.js" ></script>
+</html>

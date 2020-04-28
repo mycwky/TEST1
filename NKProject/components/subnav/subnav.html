@@ -1,0 +1,104 @@
+<!--次导航信息栏 分界面-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--<head>-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>次导航信息栏</title>
+<!--</head>-->
+<!--<body>-->
+  <div id="content">
+    <input type="hidden" id="areaId">
+    <input type="hidden" id="titleId">
+    <!-- 信息展示栏 -->
+    <div class="col-md-12">
+      <div class="transformer_top_block">
+        <span class="transformer_top_dot" style="background-color:#00ff21;box-shadow:0px 0px 8px #00ff21;"></span>
+        总台数（台）
+        <span dict="normalAmount" class="status" style="margin-top:30px;font-size:28px;font-weight:bold"
+          id="normal">0</span>
+        <button class="btn btn-primary btn-lg btn-st" style="margin-top: -10%;" data-toggle="modal" value="normal">
+          编辑
+        </button>
+      </div>
+      <div class="transformer_top_block">
+        <span class="transformer_top_dot" style="background-color:#ff0000;box-shadow:0px 0px 8px #ff0000;"></span>
+        异常运行（台）
+        <span dict="abnormalAmount" class="status" style="margin-top:30px;font-size:28px;font-weight:bold"
+          id="abnormal">0</span>
+        <button class="btn btn-primary btn-lg btn-st status-btn" style="margin-top: -10%;" data-toggle="modal"
+          value="abnormal">
+          编辑
+        </button>
+      </div>
+      <div class="transformer_top_block">
+        <span class="transformer_top_dot" style="background-color:#ff6a00;box-shadow:0px 0px 8px #ff6a00;"></span>
+        故障率（%）
+        <span dict="failureRate" class="status" style="margin-top:30px;font-size:28px;font-weight:bold"
+          id="fault">0</span>
+        <button class="btn btn-primary btn-lg btn-st" style="margin-top: -10%;" data-toggle="modal" value="fault">
+          编辑
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 模态框（Modal）正常运行、异常运行、故障率状态框的规则 -->
+  <div class="modal fade" id="myModal-rt-statu" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title">
+            配置
+          </h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>序列</td>
+                <td colspan="3" id="gz-group-status"></td>
+              </tr>
+              <tr>
+                <td><a style="color: red">✔</a>请选择</td>
+                <td colspan="3" id="gz-selects"></td>
+              </tr>
+              <tr class="status-isShow">
+                <td><a style="color: red">✔</a>请输入设备ID</td>
+                <td colspan="3"><input id="gz-unit" type="text" placeholder="请选择设备ID..." /></td>
+              </tr>
+              <tr class="status-isShow">
+                <td><a style="color: red">✔</a>数据ID</td>
+                <td><input value="" id="gz-dataId" placeholder="请输入数据ID..."></td>
+              </tr>
+              <tr class="status-isShow">
+                <td><a style="color: red">✔</a>刷新周期</td>
+                <td><input value="" id="gz-refreshAlert" placeholder="刷新周期..."></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-primary " id="save-status">
+            提交更改
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--</body>-->
+</html>

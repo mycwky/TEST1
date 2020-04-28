@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65931330-c212-4a10-a2e8-ab72253ddb16" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NK_main_page_test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+              <folding>
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/header/header_main_pz.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6690">
+              <caret line="223" column="12" selection-start-line="223" selection-start-column="12" selection-end-line="223" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NK_page_show_test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/echarts_main/echarts_show.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/echarts_main/echartsmain.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5160">
+              <caret line="172" column="7" selection-start-line="172" selection-start-column="7" selection-end-line="172" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/js/include.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="21" column="129" selection-start-line="21" selection-start-column="129" selection-end-line="21" selection-end-column="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>var HeadResponseValue = 0;</find>
+      <find>aggregateData_4</find>
+      <find>saveHeadDeviceIdAndDataId</find>
+      <find>postForUIJson</find>
+      <find>Head_getData</find>
+      <find>postForMeJson</find>
+      <find>reloadMainHead</find>
+      <find>refreshEcharts_1_clearInt</find>
+      <find>refreshEcharts_1</find>
+      <find>reloadMainEcharts</find>
+      <find>CurveDiv</find>
+      <find>postRunAsyncToTJson</find>
+      <find>http://119.3.171.138:8082/iot/api/dpt/data/find</find>
+      <find>dataDateType</find>
+      <find>formatterValue</find>
+      <find>获取曲线图表数据</find>
+      <find>curveReturnDataOfMonth</find>
+      <find>curveReturnDataOfYear</find>
+      <find>getMainEcharts2</find>
+      <find>getData_Echarts</find>
+      <find>curveGetY</find>
+      <find>curve_sendinfo_data</find>
+      <find>curveGenGetFirstValue</find>
+      <find>CurveGetDivData</find>
+      <find>curveRealTimeDataTail</find>
+      <find>cuiveSwitchDate</find>
+      <find>realTimeData</find>
+      <find>reloadAlert</find>
+      <find>MainHead</find>
+      <find>Alert</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/common/js/alert_gen.js" />
+        <option value="$PROJECT_DIR$/components/header/header_page_show.html" />
+        <option value="$PROJECT_DIR$/components/header/header_pz_main.html" />
+        <option value="$PROJECT_DIR$/NK_page_main_test.html" />
+        <option value="$PROJECT_DIR$/components/nav/nav_text_main_show.html" />
+        <option value="$PROJECT_DIR$/components/nav/nav_text_main.html" />
+        <option value="$PROJECT_DIR$/common/js/untils.js" />
+        <option value="$PROJECT_DIR$/common/js/head_gen.js" />
+        <option value="$PROJECT_DIR$/common/js/curve.js" />
+        <option value="$PROJECT_DIR$/NK_PZ_MAIN.html" />
+        <option value="$PROJECT_DIR$/2.html" />
+        <option value="$PROJECT_DIR$/test2.html" />
+        <option value="$PROJECT_DIR$/NK_main_show_test.html" />
+        <option value="$PROJECT_DIR$/components/header/header_main.html" />
+        <option value="$PROJECT_DIR$/common/js/include.js" />
+        <option value="$PROJECT_DIR$/common/js/ajaxMode.js" />
+        <option value="$PROJECT_DIR$/common/js/prj_UI_cfg.js" />
+        <option value="$PROJECT_DIR$/components/header/header_main_pz.html" />
+        <option value="$PROJECT_DIR$/static/js/report.js" />
+        <option value="$PROJECT_DIR$/NK_main_page_test.html" />
+        <option value="$PROJECT_DIR$/components/echarts_main/echartsmain.html" />
+        <option value="$PROJECT_DIR$/common/js/pzmain_config.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="506" />
+    <option name="y" value="131" />
+    <option name="width" value="1250" />
+    <option name="height" value="975" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="echarts_main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NKProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NKProject" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\1\5 - 副本\NKProject(3)\NKProject" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65931330-c212-4a10-a2e8-ab72253ddb16" name="Default Changelist" comment="" />
+      <created>1587542895103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587542895103</updated>
+      <workItem from="1587542896674" duration="4522000" />
+      <workItem from="1587555521870" duration="11648000" />
+      <workItem from="1587603787237" duration="47000" />
+      <workItem from="1587603855447" duration="3787000" />
+      <workItem from="1587608010563" duration="17336000" />
+      <workItem from="1587632748576" duration="13837000" />
+      <workItem from="1587691311266" duration="5379000" />
+      <workItem from="1587720199780" duration="1360000" />
+      <workItem from="1587722530950" duration="5974000" />
+      <workItem from="1587910907090" duration="154000" />
+      <workItem from="1587911158597" duration="146000" />
+      <workItem from="1588069433083" duration="1542000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="65732000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14910433" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/components/iframe_main/iframe_main.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/echarts_DT_main/echarts_DT_main_show.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/echarts_DT_main/echarts_DT_main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/nav/nav.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/nav/nav_text_main_show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/nav/nav_text_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NK_PZ_MAIN.html" />
+    <entry file="file://$PROJECT_DIR$/2.html" />
+    <entry file="file://$PROJECT_DIR$/NK_main_page_test 2.html" />
+    <entry file="file://$PROJECT_DIR$/test2.html" />
+    <entry file="file://$PROJECT_DIR$/components/header/header_page_show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2420">
+          <caret line="110" column="61" lean-forward="true" selection-start-line="110" selection-start-column="61" selection-end-line="110" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NK_page_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="81" lean-forward="true" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/header/header_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="80" column="52" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NK_main_show_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/baotou_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <folding>
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#66#72#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#6#12#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="e#182#188#0" expanded="true" />
+            <element signature="e#188#194#0" expanded="true" />
+            <element signature="e#270#276#0" expanded="true" />
+            <element signature="e#276#282#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#6#12#0" expanded="true" />
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#66#72#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#90#96#0" expanded="true" />
+            <element signature="e#96#102#0" expanded="true" />
+            <element signature="e#116#122#0" expanded="true" />
+            <element signature="e#122#128#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#298#304#0" expanded="true" />
+            <element signature="e#304#310#0" expanded="true" />
+            <element signature="e#386#392#0" expanded="true" />
+            <element signature="e#392#398#0" expanded="true" />
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#66#72#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#90#96#0" expanded="true" />
+            <element signature="e#96#102#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#6#12#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="e#182#188#0" expanded="true" />
+            <element signature="e#188#194#0" expanded="true" />
+            <element signature="e#270#276#0" expanded="true" />
+            <element signature="e#276#282#0" expanded="true" />
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#66#72#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#90#96#0" expanded="true" />
+            <element signature="e#96#102#0" expanded="true" />
+            <element signature="e#116#122#0" expanded="true" />
+            <element signature="e#122#128#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#298#304#0" expanded="true" />
+            <element signature="e#304#310#0" expanded="true" />
+            <element signature="e#386#392#0" expanded="true" />
+            <element signature="e#392#398#0" expanded="true" />
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#66#72#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#90#96#0" expanded="true" />
+            <element signature="e#96#102#0" expanded="true" />
+            <element signature="e#113#119#0" expanded="true" />
+            <element signature="e#119#125#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#295#301#0" expanded="true" />
+            <element signature="e#301#307#0" expanded="true" />
+            <element signature="e#383#389#0" expanded="true" />
+            <element signature="e#389#395#0" expanded="true" />
+            <element signature="e#81#87#0" expanded="true" />
+            <element signature="e#87#93#0" expanded="true" />
+            <element signature="e#146#152#0" expanded="true" />
+            <element signature="e#152#158#0" expanded="true" />
+            <element signature="e#210#216#0" expanded="true" />
+            <element signature="e#216#222#0" expanded="true" />
+            <element signature="e#271#277#0" expanded="true" />
+            <element signature="e#277#283#0" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#453#459#0" expanded="true" />
+            <element signature="e#459#465#0" expanded="true" />
+            <element signature="e#541#547#0" expanded="true" />
+            <element signature="e#547#553#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#!!top" expanded="true" />
+            <element signature="n#style#1;n#select#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#66#72#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#112#118#0" expanded="true" />
+            <element signature="e#118#124#0" expanded="true" />
+            <element signature="e#200#206#0" expanded="true" />
+            <element signature="e#206#212#0" expanded="true" />
+            <element signature="e#81#87#0" expanded="true" />
+            <element signature="e#87#93#0" expanded="true" />
+            <element signature="e#127#133#0" expanded="true" />
+            <element signature="e#133#139#0" expanded="true" />
+            <element signature="e#175#181#0" expanded="true" />
+            <element signature="e#181#187#0" expanded="true" />
+            <element signature="e#223#229#0" expanded="true" />
+            <element signature="e#229#235#0" expanded="true" />
+            <element signature="e#311#317#0" expanded="true" />
+            <element signature="e#317#323#0" expanded="true" />
+            <element signature="e#81#87#0" expanded="true" />
+            <element signature="e#87#93#0" expanded="true" />
+            <element signature="e#127#133#0" expanded="true" />
+            <element signature="e#133#139#0" expanded="true" />
+            <element signature="e#175#181#0" expanded="true" />
+            <element signature="e#181#187#0" expanded="true" />
+            <element signature="e#223#229#0" expanded="true" />
+            <element signature="e#229#235#0" expanded="true" />
+            <element signature="e#311#317#0" expanded="true" />
+            <element signature="e#317#323#0" expanded="true" />
+            <element signature="e#72#78#0" expanded="true" />
+            <element signature="e#78#84#0" expanded="true" />
+            <element signature="e#118#124#0" expanded="true" />
+            <element signature="e#124#130#0" expanded="true" />
+            <element signature="e#166#172#0" expanded="true" />
+            <element signature="e#172#178#0" expanded="true" />
+            <element signature="e#214#220#0" expanded="true" />
+            <element signature="e#220#226#0" expanded="true" />
+            <element signature="e#302#308#0" expanded="true" />
+            <element signature="e#308#314#0" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#9;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#!!top" expanded="true" />
+            <element signature="e#54#60#0" expanded="true" />
+            <element signature="e#60#66#0" expanded="true" />
+            <element signature="e#93#99#0" expanded="true" />
+            <element signature="e#99#105#0" expanded="true" />
+            <element signature="e#132#138#1" expanded="true" />
+            <element signature="e#162#168#1" expanded="true" />
+            <element signature="e#191#197#0" expanded="true" />
+            <element signature="e#197#203#0" expanded="true" />
+            <element signature="e#300#306#0" expanded="true" />
+            <element signature="e#306#312#0" expanded="true" />
+            <element signature="e#54#60#0" expanded="true" />
+            <element signature="e#60#66#0" expanded="true" />
+            <element signature="e#93#99#0" expanded="true" />
+            <element signature="e#99#105#0" expanded="true" />
+            <element signature="e#132#138#1" expanded="true" />
+            <element signature="e#162#168#1" expanded="true" />
+            <element signature="e#191#197#0" expanded="true" />
+            <element signature="e#197#203#0" expanded="true" />
+            <element signature="e#300#306#0" expanded="true" />
+            <element signature="e#306#312#0" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/js/untils.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/alert_gen.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/head_gen.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/ajaxMode.js" />
+    <entry file="file://$PROJECT_DIR$/components/header/header_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="126" column="30" lean-forward="true" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/FileSaver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/pzmain.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/js/treeOperation.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/runInterfice.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/prj_UI_cfg.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/pzmian.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/pzmain_config.js" />
+    <entry file="file://$PROJECT_DIR$/common/js/curve.js" />
+    <entry file="file://$PROJECT_DIR$/NK_main_page_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/header/header_main_pz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6690">
+          <caret line="223" column="12" selection-start-line="223" selection-start-column="12" selection-end-line="223" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NK_page_show_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/echarts_main/echarts_show.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/echarts_main/echartsmain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5160">
+          <caret line="172" column="7" selection-start-line="172" selection-start-column="7" selection-end-line="172" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/js/include.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="21" column="129" selection-start-line="21" selection-start-column="129" selection-end-line="21" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

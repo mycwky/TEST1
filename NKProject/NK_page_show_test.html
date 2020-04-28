@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>农垦分页面顯示頁</title>
+    <link href="common/css/common.css" rel="stylesheet" />
+    <script type="text/javascript" src="common/js/include.js"></script>
+    <link href="static/css/bass.css" rel="stylesheet" />
+</head>
+<body>
+<div class="col-md-12">
+    <div id="header"></div>
+    <div id="nav_page"></div>
+    <div id="subnav"></div>
+    <div id="echarts_DT"></div>
+    <div id="rule_page"></div>
+    <div id="myIframe_main"></div>
+    <div id="FFDQ"></div>.
+</div>
+
+</body>
+<script type="text/javascript">
+$("#header").load('components/header/header_page_show.html',function () {
+    $.getScript("common/js/until/ajaxMode.js",function () {
+        alert("引用JS成功1")
+    });
+    $.getScript("common/js/until/prj_UI_cfg.js",function () {
+        alert("引用JS成功11")
+    });
+    $.getScript("common/js/until/treeOperation.js",function () {
+        alert("引用JS成功112")
+    });
+    $.getScript("common/js/until/untils.js",function () {
+        alert("引用JS成功1123")
+    });
+    $.getScript("common/js/until/untils.js",function () {
+        alert("引用JS成功1123")
+    });
+    $.getScript("common/js/head/alert_gen.js",function () {
+        alert("引用JS成功113")
+    });
+});                  //頂部導航欄
+$("#nav_page").load('components/nav/nav.html');                           //橫向導航欄
+$("#subnav").load('components/subnav/subnav.html');                       //重要信息展示欄
+$("#echarts_DT").load("components/echarts_DT_main/echarts_DT_main_show.html");         //散點圖與單體信息模塊
+$("#rule_page").load('components/rule_page/rule_page.html');              //底部設備型號規則
+$("#myIframe_main").load('components/iframe_main/iframe_main.html');      //主接線路圖
+$("#FFDQ").load('components/FFDQ_main/FFDQ_main.html');                   //非發電區
+</script>
+<script type="text/javascript">
+    function setInterval2(func, interv) {
+      func();
+      setInterval(func, interv);
+    }
+    function imgerror(img) {
+      img.src = "static/users/default.png";
+      img.onerror = null;   //控制不要一直跳动
+    }
+
+  </script>
+<!--JS添加這裡-->
+<script src="static/js/baotou_page_pz.js"></script>
+<script src="static/js/enum_pz.js"></script>
+<script src="static/js/function.js"></script>
+<script src="static/js/report.js"></script>
+<script type="text/javascript" src="static/datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="static/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+</html>

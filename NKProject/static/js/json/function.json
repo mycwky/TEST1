@@ -1,0 +1,17 @@
+{
+  "functionList": [
+    {
+      "name": "常规显示",
+      "functionName":"routineFun",
+      "functionIsShow": "Y"
+    },{
+      "name": "异常计算",
+      "functionName":"exceptionFun",
+      "functionIsShow": "N"
+    },{
+      "name": "故障率计算",
+      "functionName":"failureRateFun",
+      "functionIsShow": "N"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+
+<!-- 主页面图表组件 -->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>图表</title>-->
+<!--</head>-->
+<!--<body>-->
+     <!--功率-->
+     <div class="row">
+        <div class="col-md-6">
+          <div class="charGrid" id="showMainEcharts_1">
+            <strong class="title" style="color: white"></strong>
+            <a class="time"></a>
+            <button class="btn btn-primary btn-lg" data-target="#myModal-echarts" data-toggle="modal"
+                    onclick="getEchartsName('nk_main')">
+              编辑
+            </button>
+            <div id="echarts_div_1" style="height: 310px">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="charGrid" id="showMainEcharts_2">
+            <strong class="title" style="color: white"></strong>
+            <a class="time"></a>
+            <button class="btn btn-primary btn-lg" data-target="#myModal-echarts" data-toggle="modal"
+                    onclick="getEchartsName('nk_main')">
+              编辑
+            </button>
+            <div id="echarts_div_2" style="height: 310px"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!--SOC-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="charGrid" id="showMainEcharts_3">
+            <strong class="title" style="color: white"></strong>
+            <a class="time"></a>
+            <button class="btn btn-primary btn-lg" data-target="#myModal-echarts" data-toggle="modal"
+                    onclick="getEchartsName('nk_main')">
+              编辑
+            </button>
+            <div id="echarts_div_3" style="height: 310px"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="charGrid" id="showMainEcharts_4">
+            <strong class="title" style="color: white"></strong>
+            <a class="time"></a>
+            <button class="btn btn-primary btn-lg" data-target="#myModal-echarts" data-toggle="modal"
+                    onclick="getEchartsName('nk_main')">
+              编辑
+            </button>
+            <div id="echarts_div_4" style="height: 310px"></div>
+          </div>
+        </div>
+      </div>
+  
+  
+
+  
+<!-- 模态框（Modal）echarts图表 -->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModal-echarts" role="dialog"
+tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+ <div class="modal-header">
+   <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+     &times;
+   </button>
+   <h4 class="modal-title" id="myModalLabel-echarts">
+   </h4>
+ </div>
+ <div class="modal-body">
+   <table class="table table-bordered">
+     <thead>
+     <tr>
+       <td colspan="4">标<a style="color: red">✔</a>的必填(选),标<a style="color: yellow">✔</a>选填<select style="float: right;height: 25px" id="select_echart_data_type" onchange="selectEcharts_Data_Type(this.value)"><option value="echarts_mr">默认</option><option value="echarts_fd">发电小时数</option><option value="echarts_alert" hidden>告警统计</option></select></td>
+     </tr>
+     </thead>
+     <tbody>
+     <tr>
+       <td>序列</td>
+       <td colspan="3" id="deviceIdAndDataId"></td>
+     </tr>
+     <tr id="needInputWorD">
+       <td><a style="color: red">✔</a>设备ID</td>
+       <td><input id="inputDeviceId-echarts" placeholder="请输入设备ID" value="" ></td>
+       <td><a style="color: red">✔</a>数据ID</td>
+       <td><input id="inputDataId-echarts" placeholder="请输入数据点ID" value="" ></td>
+     </tr>
+     <tr hidden id="needInputEvl">
+       <td><a style="color: red">✔</a>事件等级</td>
+       <td colspan="3"><input id="inputEvl-echarts" placeholder="请输入事件等级" value="" style="width: 100%"></td>
+     </tr>
+     <tr>
+       <td><a style="color: red">✔</a>数据点名称</td>
+       <td><input id="inputDataName-echarts" placeholder="请输入数据点名称" value=""></td>
+       <td>装机容量</td>
+       <td><input id="capacity" placeholder="请输入装机容量" value=""></td>
+     </tr>
+     <tr>
+       <td colspan="4">
+         <button id="addDeviceIdAndDataId" style="width: 100%">增加</button>
+       </td>
+     </tr>
+     <tr>
+       <td><a style="color: yellow">✔</a>展示块标题</td>
+       <td colspan="3"><input id="inputName-echarts" placeholder="输入展示块标题" style="width: 100%" value=""></td>
+     </tr>
+     <tr>
+       <td><a style="color: yellow">✔</a>是否显示百分比</td>
+       <td><select id="showPercentYesOrNo" style="height: 25px">
+         <option value="true">是</option>
+         <option value="false">否</option>
+       </select></td>
+       <td><a style="color: yellow">✔</a>是否显示数据标签</td>
+       <td>
+         <select id="whetherToDisplayDataLabels" style="height: 25px">
+           <option value="true">是</option>
+           <option value="false">否</option>
+         </select>
+       </td>
+     </tr>
+     <tr>
+       <td><a style="color: red">✔</a>图表类型</td>
+       <td>
+         <select id="showEchartsType" style="height: 25px">
+          
+         </select>
+       </td>
+       <td><a style="color: red">✔</a>时间段</td>
+       <td>
+       
+         <select id="showDateEcharts"  style="height: 25px">
+          
+         </select>
+       </td>
+     </tr>
+    
+     <tr>
+       <td colspan="2"><a style="color: yellow">✔</a>数据刷新周期(单位:秒)</td>
+       <td colspan="2"><input  id="refreshData" style="width: 100%" type="number" value=""></td>
+     </tr>
+     <tr>
+       <td colspan="2">输入保留的小数位</td>
+       <td colspan="2"><input  id="xiaoshu_echarts" type="number" value="" style="width: 100%"></td>
+     </tr>
+     </tbody>
+   </table>
+
+ </div>
+ <div class="modal-footer">
+   <button class="btn btn-default" data-dismiss="modal" type="button">关闭
+   </button>
+   <button class="btn btn-primary" data-dismiss="modal" onclick="saveEchartsDeviceIdAndDataId('nk_main')"
+           type="button" id="bt_sub">
+     提交更改
+   </button>
+ </div>
+</div>
+</div>
+</div>
+
+
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--</html>-->
+
+<!--<script src="common/js/until"></script>-->
+<!--<script src="common/js/main/curve.js" ></script>-->

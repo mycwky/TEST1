@@ -1,0 +1,17 @@
+{
+  "describeArr": [
+    {
+      "describe": "当日发电量"
+     },{
+      "describe": "功率"
+    },{
+      "describe": "阳光"
+    },{
+      "describe": "温度"
+    },{
+      "describe": "风速"
+    },{
+      "describe": "发电量"
+    }
+  ]
+}
